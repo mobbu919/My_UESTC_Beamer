@@ -1,0 +1,172 @@
+\documentclass{beamer}
+\usepackage{ctex, hyperref}
+\usepackage[T1]{fontenc}
+
+% other packages
+\usepackage{latexsym,amsmath,xcolor,multicol,booktabs,calligra}
+\usepackage{graphicx,pstricks,listings,stackengine}
+
+
+\author{mobbu}
+\title{论如何做好一个学术PPT}
+\subtitle{毕业设计开题报告}
+\institute{电子科技大学牛马学院}
+\date{2023年10月30日}
+\usepackage{UESTC}
+% defs
+
+% defs
+\def\cmd#1{\texttt{\color{red}\footnotesize $\backslash$#1}}
+\def\env#1{\texttt{\color{blue}\footnotesize #1}}
+\definecolor{deepblue}{rgb}{0,0,0.5}
+\definecolor{deepred}{rgb}{0.6,0,0}
+\definecolor{deepgreen}{rgb}{0,0.5,0}
+\definecolor{halfgray}{gray}{0.55}
+
+\lstset{
+    basicstyle=\ttfamily\small,
+    keywordstyle=\bfseries\color{deepblue},
+    emphstyle=\ttfamily\color{deepred},    % Custom highlighting style
+    stringstyle=\color{deepgreen},
+    numbers=left,
+    numberstyle=\small\color{halfgray},
+    rulesepcolor=\color{red!20!green!20!blue!20},
+    frame=shadowbox,
+}
+
+\begin{document}
+
+\kaishu
+\begin{frame}
+    \titlepage
+    \begin{figure}[htpb]
+        \begin{center}
+            \includegraphics[width=0.2\linewidth]{pic/logo.pdf}
+        \end{center}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \tableofcontents[sectionstyle=show,subsectionstyle=show/shaded/hide,subsubsectionstyle=show/shaded/hide]
+\end{frame}
+
+% -----------------------------正文--------------------------------- %
+% part1:课题背景
+\section{课题背景}
+
+\subsection{背景介绍}
+
+现在大家无论是本科上课讨论课、pre还是研究生博士生组会，做PPT的机会大大的。
+
+% part2:研究现状
+\section{研究现状}
+
+\subsection{中文UESTC模版}
+
+\begin{frame}{中文模版示例}
+[UESTC中文Beamer模版](https://www.overleaf.com/latex/templates/uestc-beamer-theme/ybqzdsgvrfdq)
+\end{frame}
+
+\subsection{英文UESTC模版}
+\begin{frame}{英文模版示例}
+[UESTC英文Beamer模版](https://github.com/mobbu919/UESTC_Beamer)
+\end{frame}
+
+% part3:研究内容
+\section{研究内容}
+
+\begin{frame}{页面标题}
+% 页面内容
+这是一页PPT
+\end{frame}
+
+\begin{frame}{分点}
+\begin{itemize}
+    \item 原神
+    \item 王者荣耀
+\end{itemize}
+\end{frame}
+
+\begin{frame}{图片插入}
+
+\begin{figure}
+    % 设置居中显示
+    \centering 
+    % 设置页面75%宽度，链接为pic/test.pdf
+    \includegraphics[width=0.75\linewidth]{pic/test.pdf} 
+    % 设置图片标题
+    \caption{图片标题}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}{下标}
+    这是一个下标\footnotemark[1]
+    \footnotetext[1]{www.mobbu.space}
+\end{frame}
+
+\begin{frame}{公式}
+    这是一个行内公式$a=b+c$
+    这是一个行间公式：
+    $$
+    a=b+\frac{c}{d}+\sum _{n=1}^{N} x_ny_n
+    $$
+\end{frame}
+
+\begin{frame}{表格}
+\begin{table}[h]
+    \centering
+    \begin{tabular}{c|c}
+        原神 & 塞尔达 \\
+        \hline
+        米哈游 & 任天堂 \\
+        手机、电脑 & switch \\
+        开放二次元 & 开放世界探索 \\
+        组队游玩 & 单人游戏 \\
+        氪金游戏 & 买断 \\
+        启动 & 关闭 \\
+    \end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}{分栏}
+    \begin{columns}
+        \column{0.5\textwidth}
+        这是左边的一栏
+        \column{0.5\textwidth}
+        这是右边的一栏
+    \end{columns}
+\end{frame}
+
+\begin{frame}{分块}
+    \begin{block}{第一个块}
+    王源
+    \end{block} 
+    \begin{block}{第二个块}
+    王俊凯
+    \end{block} 
+    \begin{block}{第三个块}
+    易洋千玺
+    \end{block} 
+\end{frame}
+
+% part4:计划进度
+\section{计划进度}
+
+\begin{frame}
+    \begin{itemize}
+        \item 十一月、十二月：摸鱼
+        \item 一月：摸鱼
+        \item 二月：摸鱼
+        \item 三月：摸鱼
+        \item 四月：开始抱佛脚
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \begin{center}
+        {\Huge\calligra Thanks!}
+    \end{center}
+\end{frame}
+
+\end{document}
